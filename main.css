@@ -1,5 +1,5 @@
 body {
-    min-width: 1020px;
+    min-width: 570px;
 }
 
 .nav-icon {
@@ -10,6 +10,7 @@ body {
 .nav-search-div {
     border-radius: .25rem;
     margin: .25rem;
+    height:30px;
     background-color: hsla(0,0%,100%,0.125);
 }
 
@@ -17,10 +18,18 @@ body {
     background-color: #24292e;
 }
 
-input::placeholder {
-    color: rgb(97, 97, 97);
+.nav-search-div input::placeholder {
+    color: #929292;
 }
 
+.nav-search-div input:focus {
+    outline: none;
+}
+
+
+
+/* trials */
 .custom-div {
     background-color: grey;
+    height:30px;
 }

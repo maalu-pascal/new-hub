@@ -8,8 +8,8 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -17,47 +17,34 @@
 </head>
 
 <body>
-    <div class="Header text-light p-2 header-div">
-        <div class="container d-flex">
-            <div>
-                <img src="assets/images/si-glyph-alien.svg" style="color:white;" class="nav-icon" />
+    <div class="text-light header-div">
+        <nav class="container p-2 navbar navbar-expand-lg">
+            <a><img src="assets/images/si-glyph-alien.svg" style="color:white;" class="nav-icon" /></a>
+            <span class="h3 mb-0">New Hub</span>
+
+            <div class=" nav-search-div">
+                <input type="search" placeholder="Search..." size="25" class="bg-transparent px-2 border-0">
+                <span><img src="assets/images/icons8-search-16.png" class="p-2" /> </span>
             </div>
-            <div class="align-items-center d-flex">
-                <span class="h3 mb-0">New Hub</span>
-                <div class="d-flex flex-row">
-                    <div class=" d-flex nav-search-div">
-                        <input type="search" placeholder="Search..." class="bg-transparent border-0">
-                        <span><img src="assets/images/icons8-search-16.png" class="p-2" /> </span>
-                    </div>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#" aria-label="Pull Requests">Requests</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#" aria-label="Issues">Issues</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#" aria-label="Market place">Marketplace</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light" href="#" aria-label="Explore">Explore</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="d-flex ml-auto">
-                <ul class="nav d-flex">
+            <ul class="nav">
+                <li class="nav-item"><a class="px-2 nav-link text-light font-weight-bold" href="#" aria-label="Pull Requests">Requests</a></li>
+                <li><a class="px-2 nav-link text-light font-weight-bold" href="#" aria-label="Issues">Issues</a></li>
+                <li class="nav-item"><a class="px-2 nav-link text-light font-weight-bold" href="#" aria-label="Market place">Marketplace</a></li>
+                <li class="nav-item"><a class="px-2 nav-link text-light font-weight-bold" href="#" aria-label="Explore">Explore</a></li>
+            </ul>
+            <div class="ml-auto">
+                <ul class="nav">
                     <li>
                         <a class="nav-link" aria-label="No new message" href="#">
                             <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path
-                                    fill-rule="evenodd" fill="grey" d="M13.99 11.991v1H0v-1l.73-.58c.769-.769.809-2.547 1.189-4.416.77-3.767 4.077-4.996 4.077-4.996 0-.55.45-1 .999-1 .55 0 1 .45 1 1 0 0 3.387 1.229 4.156 4.996.38 1.879.42 3.657 1.19 4.417l.659.58h-.01zM6.995 15.99c1.11 0 1.999-.89 1.999-1.999H4.996c0 1.11.89 1.999 1.999 1.999z"></path>
+                                    fill-rule="evenodd" fill="#aaaaaa" d="M13.99 11.991v1H0v-1l.73-.58c.769-.769.809-2.547 1.189-4.416.77-3.767 4.077-4.996 4.077-4.996 0-.55.45-1 .999-1 .55 0 1 .45 1 1 0 0 3.387 1.229 4.156 4.996.38 1.879.42 3.657 1.19 4.417l.659.58h-.01zM6.995 15.99c1.11 0 1.999-.89 1.999-1.999H4.996c0 1.11.89 1.999 1.999 1.999z"></path>
                             </svg>
                         </a>
                     </li>
                     <li>
                         <a class="nav-link " href="#">
                             <svg class="octicon octicon-plus" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path
-                                    fill-rule="evenodd" fill="grey" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"></path>
+                                    fill-rule="evenodd" fill="#aaaaaa" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"></path>
                             </svg>
                         </a>
                     </li>
@@ -67,34 +54,14 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </nav>
 
     </div>
-    </div>
     <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="custom-div">
-                    <p>Body inside the container</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="custom-div">
-                    <p>Body inside the container</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="custom-div">
-                    <p>Body inside the container</p>
-                </div>
-            </div>
-            <div class="col">
-                <div class="custom-div">
-                    <p>Body inside the container</p>
-                </div>
-            </div>
+        <div class="row ">
+
         </div>
-    </div>
+        <div class="row custom-div"> </div>
     </div>
     <div class="Footer"></div>
 </body>
