@@ -3,23 +3,26 @@
 
 <head>
     <!-- <script src="lodash.js"></script> -->
-    <link rel="stylesheet" href="main.css">
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-        crossorigin="anonymous"></script>
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
     <div class="text-light header-div">
         <nav class="container p-2 navbar navbar-expand-lg">
-            <a><img src="assets/images/si-glyph-alien.svg" style="color:white;" class="nav-icon" /></a>
+            <a href="/notifications"><img src="assets/images/si-glyph-alien.svg" style="color:white;" class="nav-icon" /></a>
             <span class="h3 mb-0">New Hub</span>
 
             <div class=" nav-search-div">
@@ -32,38 +35,117 @@
                 <li class="nav-item"><a class="px-2 nav-link text-light font-weight-bold" href="#" aria-label="Market place">Marketplace</a></li>
                 <li class="nav-item"><a class="px-2 nav-link text-light font-weight-bold" href="#" aria-label="Explore">Explore</a></li>
             </ul>
-            <div class="ml-auto">
-                <ul class="nav">
-                    <li>
-                        <a class="nav-link" aria-label="No new message" href="#">
-                            <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path
-                                    fill-rule="evenodd" fill="#aaaaaa" d="M13.99 11.991v1H0v-1l.73-.58c.769-.769.809-2.547 1.189-4.416.77-3.767 4.077-4.996 4.077-4.996 0-.55.45-1 .999-1 .55 0 1 .45 1 1 0 0 3.387 1.229 4.156 4.996.38 1.879.42 3.657 1.19 4.417l.659.58h-.01zM6.995 15.99c1.11 0 1.999-.89 1.999-1.999H4.996c0 1.11.89 1.999 1.999 1.999z"></path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link " href="#">
-                            <svg class="octicon octicon-plus" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"><path
-                                    fill-rule="evenodd" fill="#aaaaaa" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z"></path>
-                            </svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav-link " href="#"><img src="assets/images/si-glyph-head.svg" height="18" />
-                        </a>
-                    </li>
-                </ul>
+
+            <div class="ml-auto nav">
+                <a class="nav-link" aria-label="No new message" href="#">
+                    <svg class="octicon octicon-bell" viewBox="0 0 14 16" version="1.1" width="14" height="16" aria-hidden="true"><path
+                            fill-rule="evenodd" fill="#aaaaaa" d="M13.99 11.991v1H0v-1l.73-.58c.769-.769.809-2.547 1.189-4.416.77-3.767 4.077-4.996 4.077-4.996 0-.55.45-1 .999-1 .55 0 1 .45 1 1 0 0 3.387 1.229 4.156 4.996.38 1.879.42 3.657 1.19 4.417l.659.58h-.01zM6.995 15.99c1.11 0 1.999-.89 1.999-1.999H4.996c0 1.11.89 1.999 1.999 1.999z"></path>
+                    </svg>
+                </a>
+                <div role="group" class="btn-group d-flex flex-column ">
+                    <button type="button" class="btn btn-outline-secondary border-0  dropdown-toggle" data-toggle="dropdown">
+                        <svg class="octicon octicon-plus float-left " viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true"
+                            border-0>
+                            <path fill-rule="evenodd" d="M12 9H7v5H5V9H0V7h5V2h2v5h5v2z" fill="#aaaaaa"></path>
+                        </svg>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <a class="dropdown-item" href="/new">New repository</a>
+                        <a class="dropdown-item" href="/new/import">Import repository</a>
+                        <a class="dropdown-item" href="https://gist.github.com/">New gist</a>
+                        <a class="dropdown-item" href="/organizations/new">New organization</a>
+
+                        <div class="dropdown-divider"></div>
+                        <h6 class="dropdown-header">This repository</h6>
+
+                        <a class="dropdown-item" href="/twbs/bootstrap/issues/new/choose">New issue</a>
+                    </div>
+                </div>
+                <div role="group" class="btn-group d-flex flex-column ">
+                    <button type="button" class="btn btn-outline-secondary border-0 dropdown-toggle " data-toggle="dropdown">
+                        <a class="" href="#"><img src="assets/images/icons8-customer-16.png" height="18" /></a>
+                    </button>
+                    <section class="dropdown-menu dropdown-menu-right">
+                        <h6 class="dropdown-header">Signed in as</h6>
+                        <h6 class="dropdown-item font-weight-bold">user-name</h6>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/user-name">Your profile</a>
+                        <a class="dropdown-item" href="">Your repositories</a>
+                        <a class="dropdown-item" href="/organizations/new">Your stars</a>
+                        <a class="dropdown-item" href="https://gist.github.com/">Your gists</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="https://help.github.com">Help</a>
+                        <a class="dropdown-item" href="/settings/profile">Settings</a>
+                        <a class="dropdown-item" href="https://github.com">Sign-out</a>
+                    </section>
+                </div>
             </div>
         </nav>
 
     </div>
-    <div class="container">
-        <div class="row ">
-
+    <div class="main-header pt-3">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-lg-7">
+                    <ol class="breadcrumb p-0">
+                        <svg class="ml-1 mr-3 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true">
+                            <path fill="grey" fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path>
+                        </svg>
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                    </ol>
+                </div>
+                <div class="col-lg-5">
+                    <div class="btn-group">
+                        <div class="btn-group">
+                            <Button class="btn btn-light dropdown-toggle font-weight-bold small" data-toggle="dropdown"><img
+                                    src="assets/images/eye.svg" class="icon m-1"><span class="font-weight-bold small">Watch</span></Button>
+                            <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                                <a class="dropdown-item"><div><span class="d-block font-weight-bold">Not watching</span><span
+                                            class="d-block">Be notified when participating or @mentioned. </span> </div></a>
+                                <div class="dropdown-divider"></div>
+                                <button class="dropdown-item"><div><span class="d-block font-weight-bold">Watching</span><span
+                                            class="d-block">Be notified of all conversations. </span> </div></button>
+                                <div class="dropdown-divider"></div>
+                                <button class="dropdown-item"><div><span class="d-block font-weight-bold">Ignoring</span><span
+                                            class="d-block">Never be notified. </span> </div></button>
+                            </div>
+                        </div>
+                        <Button class="btn btn-light"><span class="font-weight-bold small">7,404</span></Button>
+                    </div>
+                    <div class="btn-group">
+                        <Button class="btn btn-light font-weight-bold small"> <span class="font-weight-bold small"><img src="assets/images/star.svg"
+                                    class="icon m-1">Star</span></Button>
+                        <Button class="btn btn-light font-weight-bold small"><span class="font-weight-bold small">7,404</span></Button>
+                    </div>
+                    <div class="btn-group">
+                        <Button class="btn btn-light font-weight-bold small"><span class="font-weight-bold small"><img src="assets/images/fork.svg"
+                                    class="icon m-1">Fork</span></Button>
+                        <Button class="btn btn-light font-weight-bold small"><span class="font-weight-bold small">7,404</span></Button>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-2">
+                <ul class="nav nav-tabs main-header-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><img src="assets/images/code.svg" class="icon m-1"></span>Code</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="assets/images/warning.svg" class="icon m-1">Issues</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="assets/images/icons8-pull-request-filled-16.png" class="icon m-1">Pull Requests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="assets/images/vertical-align-top.svg" class="icon m-1">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="assets/images/bar-chart.svg" class="icon m-1">Insights</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="row custom-div"> </div>
-    </div>
-    <div class="Footer"></div>
+        <div class="Footer"></div>
 </body>
 
 </html>

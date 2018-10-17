@@ -2,6 +2,10 @@ body {
     min-width: 570px;
 }
 
+.header-div {
+    background-color: #24292e;
+}
+
 .nav-icon {
     height: 40px;
     padding: 2px;
@@ -14,10 +18,6 @@ body {
     background-color: hsla(0,0%,100%,0.125);
 }
 
-.header-div {
-    background-color: #24292e;
-}
-
 .nav-search-div input::placeholder {
     color: #929292;
 }
@@ -26,10 +26,25 @@ body {
     outline: none;
 }
 
+.dropdown-item:hover {
+    background-color: #2575d1;
+}
 
+.main-header {
+     border-bottom:1px solid #e1e4e8;
+ }
 
-/* trials */
-.custom-div {
-    background-color: grey;
-    height:30px;
+.main-header-nav {
+    position: relative;
+    top:1px;
+}
+
+.main-header .btn {
+    border:1px solid rgba(27,31,35,0.2);
+    height: 30px;
+}
+
+.icon {
+    height:15px;
+    opacity: 0.7;
 }
