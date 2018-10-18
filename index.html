@@ -5,6 +5,7 @@
     <!-- <script src="lodash.js"></script> -->
 
     <!-- Bootstrap -->
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
         crossorigin="anonymous">
 
@@ -16,13 +17,14 @@
         crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="main.css">
+    <script src="main.js" defer></script>
 
 </head>
 
 <body>
     <div class="text-light header-div">
         <nav class="container p-2 navbar navbar-expand-lg">
-            <a href="/notifications"><img src="assets/images/si-glyph-alien.svg" style="color:white;" class="nav-icon" /></a>
+            <a href="/notifications"><img src="assets/images/si-glyph-alien.svg" class="nav-icon" /></a>
             <span class="h3 mb-0">New Hub</span>
 
             <div class=" nav-search-div">
@@ -83,7 +85,7 @@
         </nav>
 
     </div>
-    <div class="main-header pt-3">
+    <div class="main-header border-bottom pt-3">
         <div class="container">
             <div class="row justify-content-between">
                 <div class="col-lg-7">
@@ -91,8 +93,8 @@
                         <svg class="ml-1 mr-3 mt-1" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true">
                             <path fill="grey" fill-rule="evenodd" d="M4 9H3V8h1v1zm0-3H3v1h1V6zm0-2H3v1h1V4zm0-2H3v1h1V2zm8-1v12c0 .55-.45 1-1 1H6v2l-1.5-1.5L3 16v-2H1c-.55 0-1-.45-1-1V1c0-.55.45-1 1-1h10c.55 0 1 .45 1 1zm-1 10H1v2h2v-1h3v1h5v-2zm0-10H2v9h9V1z"></path>
                         </svg>
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Library</li>
+                        <li class="breadcrumb-item"><a href="#">twbs</a></li>
+                        <li class="breadcrumb-item  font-weight-bold active" aria-current="page"><a href="#">bootstrap</a></li>
                     </ol>
                 </div>
                 <div class="col-lg-5">
@@ -125,27 +127,97 @@
                     </div>
                 </div>
             </div>
-            <div class="container mt-2">
+            <div class=" mt-2">
                 <ul class="nav nav-tabs main-header-nav">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#"><img src="assets/images/code.svg" class="icon m-1"></span>Code</a>
+                        <a class="nav-link active " href="#"><img src="assets/images/code.svg" class="icon m-1"></span>Code</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="assets/images/warning.svg" class="icon m-1">Issues</a>
+                        <a class="nav-link text-secondary" href="#"><img src="assets/images/issue-opened.svg" class="icon m-1">Issues</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="assets/images/icons8-pull-request-filled-16.png" class="icon m-1">Pull Requests</a>
+                        <a class="nav-link text-secondary" href="#"><img src="assets/images/icons8-pull-request-filled-16.png"
+                                class="icon m-1">Pull Requests
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="assets/images/vertical-align-top.svg" class="icon m-1">Projects</a>
+                        <a class="nav-link text-secondary" href="#"><img src="assets/images/project.svg" class="icon m-1">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="assets/images/bar-chart.svg" class="icon m-1">Insights</a>
+                        <a class="nav-link text-secondary" href="#"><img src="assets/images/bar-chart.svg" class="icon m-1">Insights</a>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="Footer"></div>
+    </div>
+    <div class="main pt-4 container">
+        <div class = "p-2">
+            <span>
+                The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. <a href = "http://getbootstrap.com">http://getbootstrap.com</a>
+            </span>
+        </div>
+        <div class = "p-2">
+            <a class="m-2 small" href="#">css</a>
+            <a class="m-2 small" href="#">bootstrap</a>
+            <a class="m-2 small" href="#">javascript</a>
+        </div>
+        <div class=" summary-wrapper border rounded position-relative">
+            <div class="summary-wrapper-div ">
+                <div id="summary-wrapper-switch">
+                    <div class="row">
+                        <div class="col d-flex justify-content-center align-items-center"><img src="assets/images/history.svg" class="icon m-1"><a href="#" class = "text-dark font-weight-bold p-1">17,984</a><a href="#" class="text-dark">commits</a></div>
+                        <div class="col d-flex justify-content-center align-items-center"><img src="assets/images/git-branch.svg" class="icon m-1"><a href="#" class = "text-dark font-weight-bold p-1">31</a><a href="#" class="text-dark">branches</a></div>
+                        <div class="col d-flex justify-content-center align-items-center"><img src="assets/images/tag.svg" class="icon m-1"><a href="#" class = "text-dark font-weight-bold p-1">49</a><a href="#" class="text-dark">releases</a></div>
+                        <div class="col d-flex justify-content-center align-items-center"><img src="assets/images/person.svg" class="icon m-1"><a href="#" class = "text-dark font-weight-bold p-1">1,024</a><a href="#" class="text-dark">contributers</a></div>
+                        <div class="col d-flex justify-content-center align-items-center"><img src="assets/images/law.svg" class="icon m-1"><span></span><a href="#" class="text-dark">MIT</a></div>
+                    </div>
+                    <div class="row" id="summary-language">
+                        <div class="col d-flex justify-content-center align-items-center"><span class="rounded-circle p-1 m-1"
+                                style="background-color:#563d7c;"></span><a href="#/search?l=css" class="text-dark">CSS</a><span
+                                class="p-1 font-weight-bold text-secondary">34.9%</span></div>
+                        <div class="col d-flex justify-content-center align-items-center"><span class="rounded-circle p-1 m-1 "
+                                style="background-color:#f1e05a;"></span><a href="/search?l=javascript" class="text-dark">JavaScript</a><span
+                                class="p-1 font-weight-bold text-secondary">35.9%</span></div>
+                        <div class="col d-flex justify-content-center align-items-center"><span class="rounded-circle p-1 m-1 "
+                                style="background-color:#e34c26;"></span><a href="/search?l=javascript" class="text-dark">HTML</a><span
+                                class="p-1 font-weight-bold text-secondary">24.2%</span></div>
+                        <div class="col d-flex justify-content-center align-items-center"><span class="rounded-circle p-1 m-1 "
+                                style="background-color:#ffffff;"></span><a href="/search?l=javascript" class="text-dark">Other</a><span
+                                class="p-1 font-weight-bold text-secondary">0.5%</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="color rounded-bottom bg-dark d-flex " id="summary-color">
+                <div style="width:39.4%; height:100%; background-color:#563d7c"></div>
+                <div style='width:35.9%; height:100%; background-color:#f1e05a;'></div>
+                <div style='width:24.2%; height:100%; background-color:#e34c26'></div>
+                <div style='width:0.5%; height:100%; background-color:#ffffff'></div>
+            </div>
+        </div>
+    </div>
+    <footer class="Footer border-top container mt-4">
+        <div class="d-flex mt-4 mb-4 align-items-center">
+            <div class="mr-auto">
+                <span class="text-secondary">© 2018 GitHub, Inc.</span>
+                <a href="#">Terms</a>
+                <a href="#">Privacy</a>
+                <a href="#">Security</a>
+                <a href="#">Terms</a>
+                <a href="#">Help</a>
+            </div>
+            <div><img src="assets/images/si-glyph-alien.svg" class="nav-icon ml-auto mr-auto" /></div>
+            <div class="ml-auto">
+                <a href="#">Contact GitHub</a>
+                <a href="#">Pricing</a>
+                <a href="#">API</a>
+                <a href="#">Training</a>
+                <a href="#">Blog</a>
+                <a href="#">About</a>
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 
 </html>

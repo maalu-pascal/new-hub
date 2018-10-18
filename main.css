@@ -1,5 +1,6 @@
 body {
     min-width: 570px;
+    min-height: 100%;
 }
 
 .header-div {
@@ -30,10 +31,6 @@ body {
     background-color: #2575d1;
 }
 
-.main-header {
-     border-bottom:1px solid #e1e4e8;
- }
-
 .main-header-nav {
     position: relative;
     top:1px;
@@ -47,4 +44,51 @@ body {
 .icon {
     height:15px;
     opacity: 0.7;
+}
+
+.nav-tabs .nav-link.active{
+    border-top: 3px solid orangered;
+    border-radius: 5px;
+}
+
+.main-header-nav .nav-tabs a .nav-link{
+    color: #495057
+}
+
+.footer {
+    position: sticky;
+}
+.footer .nav-icon{
+    opacity: 0.5;
+}
+
+.summary-wrapper {
+    overflow: hidden;
+}
+
+.summary-wrapper-div {
+    overflow: hidden;
+    height: 40px;
+}
+
+.summary-wrapper .row {
+    height: 40px;
+}
+
+.color {
+    height: 8px;
+    cursor: pointer
+}
+
+.summary-wrapper-switch {
+    position: relative;
+    top:-40;
+}
+
+#summary-wrapper-switch a{
+    text-decoration: none
+}
+
+.main {
+    min-height: 55%;
 }
