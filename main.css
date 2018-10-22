@@ -15,8 +15,8 @@ body {
 .nav-search-div {
     border-radius: .25rem;
     margin: .25rem;
-    height:30px;
-    background-color: hsla(0,0%,100%,0.125);
+    height: 30px;
+    background-color: hsla(0, 0%, 100%, 0.125);
 }
 
 .nav-search-div input::placeholder {
@@ -33,32 +33,33 @@ body {
 
 .main-header-nav {
     position: relative;
-    top:1px;
+    top: 1px;
 }
 
 .main-header .btn {
-    border:1px solid rgba(27,31,35,0.2);
+    border: 1px solid rgba(27, 31, 35, 0.2);
     height: 30px;
 }
 
 .icon {
-    height:15px;
+    height: 15px;
     opacity: 0.7;
 }
 
-.nav-tabs .nav-link.active{
+.nav-tabs .nav-link.active {
     border-top: 3px solid orangered;
     border-radius: 5px;
 }
 
-.main-header-nav .nav-tabs a .nav-link{
+.main-header-nav .nav-tabs a .nav-link {
     color: #495057
 }
 
 .footer {
     position: sticky;
 }
-.footer .nav-icon{
+
+.footer .nav-icon {
     opacity: 0.5;
 }
 
@@ -82,13 +83,17 @@ body {
 
 .summary-wrapper-switch {
     position: relative;
-    top:-40;
+    top: -40;
 }
 
-#summary-wrapper-switch a{
+#summary-wrapper-switch a {
     text-decoration: none
 }
 
 .main {
     min-height: 55%;
+}
+
+.folder-structure td {
+    padding: 7px;
 }
