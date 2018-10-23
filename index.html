@@ -19,6 +19,7 @@
 </head>
 
 <body>
+
     <div class="text-light header-div">
         <nav class="new-container pt-2 pb-2 navbar navbar-expand-lg">
             <a href="/notifications"><img src="assets/images/si-glyph-alien.svg" class="nav-icon" alt="new-hub icon" /></a>
@@ -77,9 +78,10 @@
                 </div>
             </div>
         </nav>
-
     </div>
+
     <div class="main-header border-bottom pt-3">
+
         <div class="new-container">
             <div class="d-flex justify-content-between">
                 <div>
@@ -89,7 +91,6 @@
                         <li class="breadcrumb-item  font-weight-bold active" aria-current="page"><a href="#">bootstrap</a></li>
                     </ol>
                 </div>
-
                 <div>
                     <div class="btn-group">
                         <div class="btn-group ">
@@ -127,7 +128,9 @@
                         <Button class="btn btn-light font-weight-bold small"><span class="font-weight-bold small">7,404</span></Button>
                     </div>
                 </div>
+
             </div>
+
             <div class=" mt-2">
                 <ul class="nav nav-tabs main-header-nav">
                     <li class="nav-item">
@@ -316,7 +319,7 @@
                 <a href="https://jobs.getbootstrap.com/" target="_blank">Jobs</a> .
                 <a href="https://blog.getbootstrap.com/" target="_blank">Blog</a>
             </p>
-            <p class="h3 border-bottom p-2"><strong>Quick start</strong></p>
+            <p class="h3 border-bottom pb-2 mb-3 mt-4"><strong>Quick start</strong></p>
             <p class="p-2">Several quick start options are available</p>
             <ul>
                 <li class="p-1"><a href="https://github.com/twbs/bootstrap/archive/v4.1.3.zip">Download the latest release.</a></li>
@@ -330,37 +333,64 @@
             <p>Read the <a href="https://getbootstrap.com/docs/4.1/getting-started/introduction/" target="_blank">Getting
                     started page</a> for information on the framework contents, templates and examples, and more.</p>
 
-            <p class="h3 border-bottom p-2"><strong>Whats included</strong></p>
+            <p class="h3 border-bottom pb-2 mb-3 mt-4"><strong>Whats included</strong></p>
             <p class="p-2">Within the download you'll find the following directories and files, logically grouping common
                 assets and providing both compiled and minified variations. You'll see something like this:</p>
-            <code class="text-dark p-1 ">
+            <code class="text-dark">
                     bootstrap/ <br />
                     '--- dist/<br />
-                        |--- css/<br />
-                        |   |--- bootstrap-grid.css<br />
-                        |   |--- bootstrap-grid.css.map<br />
-                        |   |--- bootstrap-grid.min.css<br />
-                        |   |--- bootstrap-grid.min.css.map<br />
-                        |   |--- bootstrap-reboot.css<br />
-                        |   |--- bootstrap-reboot.css.map<br />
-                        |   |--- bootstrap-reboot.min.css<br />
-                        |   |--- bootstrap-reboot.min.css.map<br />
-                        |   |--- bootstrap.css<br />
-                        |   |--- bootstrap.css.map<br />
-                        |   |--- bootstrap.min.css<br />
-                        |   '--- bootstrap.min.css.map<br />
-                        |
-                        '--- js/<br />
-                            |--- bootstrap.bundle.js<br />
-                            |--- bootstrap.bundle.js.map<br />
-                            |--- bootstrap.bundle.min.js<br />
-                            |--- bootstrap.bundle.min.js.map<br />
-                            |--- bootstrap.js
-                            |--- bootstrap.js.map
-                            |--- bootstrap.min.js
-                            '--- bootstrap.min.js.map
+                    &emsp;&emsp;|--- css/<br />
+                    &emsp;&emsp;|&emsp;&emsp;|--- bootstrap-grid.css<br />
+                    &emsp;&emsp;|&emsp;&emsp;|--- bootstrap-grid.css.map<br />
+                    &emsp;&emsp;|&emsp;&emsp;|--- bootstrap-grid.min.css<br />
+                    &emsp;&emsp;|&emsp;&emsp;|--- bootstrap-grid.min.css.map<br />
+                    &emsp;&emsp;|&emsp;&emsp;|--- bootstrap-reboot.css<br />
+                    &emsp;&emsp;|&emsp;&emsp;|--- bootstrap-reboot.css.map<br />
+                    &emsp;&emsp;|&emsp;&emsp;|--- bootstrap-reboot.min.css<br />
+                    &emsp;&emsp;|&emsp;&emsp;|--- bootstrap-reboot.min.css.map<br />
+                    &emsp;&emsp;|&emsp;&emsp;|--- bootstrap.css<br />
+                    &emsp;&emsp;|&emsp;&emsp;|--- bootstrap.css.map<br />
+                    &emsp;&emsp;|&emsp;&emsp;|--- bootstrap.min.css<br />
+                    &emsp;&emsp;|&emsp;&emsp;'--- bootstrap.min.css.map<br />
+                    &emsp;&emsp;'--- js/<br />
+                    &emsp;&emsp;&emsp;&emsp;|--- bootstrap.bundle.js<br />
+                    &emsp;&emsp;&emsp;&emsp;|--- bootstrap.bundle.js.map<br />
+                    &emsp;&emsp;&emsp;&emsp;|--- bootstrap.bundle.min.js<br />
+                    &emsp;&emsp;&emsp;&emsp;|--- bootstrap.bundle.min.js.map<br />
+                    &emsp;&emsp;&emsp;&emsp;|--- bootstrap.js<br />
+                    &emsp;&emsp;&emsp;&emsp;|--- bootstrap.js.map<br />
+                    &emsp;&emsp;&emsp;&emsp;|--- bootstrap.min.js<br />
+                    &emsp;&emsp;&emsp;&emsp;'--- bootstrap.min.js.map<br />
             </code>
+            <p class="pt-2">We provide compiled CSS and JS (<code class="text-dark">bootstrap.*</code>), as well as compiled
+                and minified CSS and JS (<code class="text-dark">bootstrap.min.*</code>).
+                <a href="#">source maps</a> (<code class="text-dark">bootstrap.*.map</code>) are available for use with certain
+                browsers' developer tools. Bundled JS files (
+                <code class="text-dark">bootstrap.bundle.js</code> and minified <code class="text-dark">bootstrap.bundle.min.js</code>)
+                include <a href="#">Popper</a>, but not <a href="#">jQuery</a>.</p>
+
+            <p class="h3 border-bottom pb-2 mb-3 mt-4"><strong>Creators</strong></p>
+            <p class="font-weight-bold">Mark Otto</p>
+            <ul>
+                <li><a href="#">https://twitter.com/mdo</a></li>
+                <li><a href="#">https://github.com/mdo</a></li>
+            </ul>
+            <p class="font-weight-bold">Jacob Thornton</p>
+            <ul>
+                <li><a href="#"></a>https://twitter.com/fat</li>
+                <li><a href="#">https://github.com/fat</a></li>
+            </ul>
+
+            <p class="h3 border-bottom pb-2 mb-3 mt-4"><strong>Thanks</strong></p>
+            <img src="assets/images/BrowserStack.svg" alt="Browser stack logo" width="490" height="auto"/>
+            <p>Thanks to <a href="#">BrowserStack</a> for providing the infrastructure that allows us to test in real browsers!</p>
+
+            <p class="h3 border-bottom pb-2 mb-3 mt-4"><strong>Copyright and license</strong></p>
+            <p>Code and documentation copyright 2011-2018 the <a href="#">Bootstrap Authors</a> and <a href="#">Twitter,
+                    Inc.</a> Code released under the <a href="#">MIT License</a>. Docs released under <a href="#">Creative
+                    Commons</a>.</p>
         </div>
+
     </div>
     <footer class="Footer border-top new-container mt-4">
         <div class="d-flex mt-4 mb-4 align-items-center">
